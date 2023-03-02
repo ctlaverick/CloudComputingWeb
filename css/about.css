@@ -1,0 +1,109 @@
+.about-container {
+    margin: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto; */
+    grid-template-rows: auto;
+}
+
+.about-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #edf0f1;
+}
+
+.about-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #edf0f1;
+}
+
+.About-Start {
+    grid-column: 1/3;
+    grid-row: 1;
+    border-top: 1px solid #edf0f1;
+    border-left: 1px solid #edf0f1;
+}
+
+.image1 {
+    grid-column: 3/4;
+    grid-row: 1;
+}
+
+.image1 img {
+    width: 90%;
+}
+
+div h1,
+div p,
+div ul li{
+    padding-top: 10px;
+}
+
+div p,
+div ul,
+div a{
+    margin-left: 30px;
+}
+
+table {
+    border: 1px solid #edf0f1;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #edf0f1;
+    text-align: center;
+    color: #edf0f1;
+}
+
+.clouds {
+    grid-column: 2/4;
+    grid-row: 2;
+
+    border-top: 1px solid #edf0f1;
+    border-right: 1px solid #edf0f1;
+}
+
+.uses {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.pros-cons {
+    grid-column: 1/4;
+    grid-row: 4;
+}
+
+.Types {
+    grid-column: 1/3;
+    grid-row: 5;
+}
+
+div a:hover {
+    color: #0088A9;
+}
+
+.IaaS {
+    grid-row: 6;
+    grid-column: 1/3;
+}
+
+.PaaS {
+    grid-row:7;
+    grid-column: 1/3;
+}
+
+.SaaS {
+    grid-row: 8;
+    grid-column: 1/3;
+}
+
+.ServComp {
+    grid-row: 9;
+    grid-column: 1/3;
+}

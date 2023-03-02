@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.Type-Grid {
+    display: grid;
+    grid-template-columns: 5% 44% 2% 44% 5%;
+    grid-template-rows: 2% 48% 48% 2%;
+    row-gap: 5%;
+}
+
+.IaaS {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.SaaS {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.PaaS {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.Serverless {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.Container {
+    position: relative;
+    display: block;
+    background-color: #232a4d;
+    min-width: 300px;
+    min-height: 350px;
+    border: 2px solid #edf0f1;
+    border-radius: 30px;
+}
+
+.Container h1,
+.Container p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.Container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #edf0f1;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.Container p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    padding: 10px 20px 0px 20px;
+}
+
+.morebutton {
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    background-color: transparent;
+}
+
+.Container a {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 1689, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.Container a:hover {
+    background-color: rgba(0, 136, 1689, 0.8);
+}

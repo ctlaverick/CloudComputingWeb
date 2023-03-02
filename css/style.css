@@ -59,13 +59,33 @@ button:hover {
 header {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1;
+}
+/*  dropdown */
+
+.nav_links li div {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 48%;
+    width: 250px;
+}
+
+.nav_links li:hover div {
+    display: block;
+}
+
+.nav_links li div a {
+    float: none;
+    display: block;
+    padding: 12px 5px 12px 15px;
 }
 
 /* Main */
 
-body {
-    height: 100%;
+.home {
     overflow: hidden;
 }
 
@@ -76,7 +96,7 @@ body {
 
 }
 
-.Top h1 {
+/* .Top h1 {
     position: absolute;
     top: 200px;
     left: 50%;
@@ -88,14 +108,14 @@ body {
     font-size: 3em;
     color: #edf0f1;
     text-decoration: none;
-}
+} */
 
 .Top {
     display: grid;
 
 }
 
-.Learn {
+/* .Learn {
     position: absolute;
     bottom: 200px;
     left: 50%;
@@ -103,4 +123,50 @@ body {
 
     font-size: 1.2rem;
     transition: none;
+} */
+
+/* test */
+
+.Home-Grid {
+    display: grid;
+    gap: none;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20% 40% 10% 30%;
+}
+
+.Home-Grid img{
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+
+.Home-Grid h1 {
+    grid-row: 1;
+    grid-column: 2;
+    background: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    color: #edf0f1;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home-Grid a {
+    grid-row: 3;
+    grid-column: 2;
+    background: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Learn {
+    font-size: 1.2rem;
+    transition: none;
+    
 }
