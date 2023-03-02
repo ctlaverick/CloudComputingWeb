@@ -8,7 +8,7 @@ body, html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Servers.webp");
   
     /* Set a specific height */
-    height: 30%;
+    height: 20%;
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -36,3 +36,79 @@ body, html {
     color: #edf0f1;
     text-decoration: none;
   }
+
+
+main {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 2% 1fr 1fr 1fr 2%;
+  grid-template-rows: auto;
+  gap: 2% 2%
+}
+
+.what {
+  grid-row: 1;
+  grid-column: 2/5;
+
+  min-height: 200px;
+  border: 2px solid #edf0f1;
+}
+
+.pros {
+  grid-row: 2;
+  grid-column: 2;
+
+  border: 2px solid #edf0f1;
+  border-radius: 20px;
+
+  min-height: 400px;
+}
+
+.cons {
+  grid-row: 2;
+  grid-column: 3;
+
+  border: 2px solid #edf0f1;
+  border-radius: 20px;
+
+  min-height: 400px
+}
+
+.uses {
+  grid-row: 2;
+  grid-column: 4;
+
+  border: 2px solid #edf0f1;
+  border-radius: 20px;
+
+  min-height: 400px
+}
+
+main div h1, 
+main div p,
+main div ul {
+  padding: 10px 10px 0 10px;
+  background: none;
+}
+
+main div ul li {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+main div h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.what p {
+  text-align: center;
+}
+
+main div:hover h1 {
+  color: #0088A9;
+}
+
+/* main div:hover {
+  border-color: #0088A9;
+} */
