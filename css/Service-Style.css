@@ -105,10 +105,6 @@ main div h1 {
   text-align: center;
 }
 
-main div:hover h1 {
-  color: #0088A9;
+.main {
+  overflow: scroll;
 }
-
-/* main div:hover {
-  border-color: #0088A9;
-} */
